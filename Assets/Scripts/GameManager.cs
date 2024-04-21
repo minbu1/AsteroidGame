@@ -11,4 +11,14 @@ public class GameManager : MonoBehaviour
     {
         Instantiate(PlayerPrefab, PlayerSpawnpoint.transform.position, Quaternion.identity);
     }
+
+    private void Update()
+    {
+        Vector2 screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+
+        // Calculate new spawn position
+        Vector3 spawnPosition = PlayerSpawnpoint.transform.position;
+        spawnPosition.x = Random.Range(-screenBounds.x, screenBounds.x);
+        spawnPosition.y = Random.Range(-screenBounds.y, screenBounds.y);
+    }
 }
