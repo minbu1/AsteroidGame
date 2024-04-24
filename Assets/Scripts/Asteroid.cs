@@ -32,7 +32,7 @@ public class Asteroid : MonoBehaviour
     {
         if (smallAsteroidPrefab != null)
         {
-            Vector3 offset = new Vector3(0.5f, 0.5f, 0f);
+            Vector3 offset = new Vector3(0.5f, 0.5f, 0);
 
             Instantiate(smallAsteroidPrefab, transform.position + offset, Quaternion.identity);
             Instantiate(smallAsteroidPrefab, transform.position - offset, Quaternion.identity);

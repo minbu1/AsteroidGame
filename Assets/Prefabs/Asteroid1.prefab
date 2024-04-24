@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.342681, y: -1.9361156, z: 0}
-  m_LocalScale: {x: 35.7, y: 35.7, z: 35.7}
+  m_LocalScale: {x: 34.8, y: 34.8, z: 34.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -162,3 +162,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smallAsteroidPrefab: {fileID: 7044722107795755805, guid: d0fb3ce8002ce1645b73bf608468f1d7, type: 3}
+  gameManager: {fileID: 0}
